@@ -1,212 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="x3DyQ7NIlFwYAkpHjS57d5cRMLrlfQ7Wq4Ff3CMM97c" />
-    <title>Maths Tutor in Noida | Science Tutor in Noida – Yash Learning Academy</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f6f8;
-            color: #333;
-        }
-        header {
-            background: #1e3a8a;
-            color: #fff;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-        header p {
-            margin-top: 10px;
-            font-size: 1.1rem;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-            background: #fff;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #1e3a8a;
-            margin-bottom: 15px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .subjects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: #f9fafb;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .cta {
-            text-align: center;
-            background: #e0e7ff;
-        }
-        .cta button {
-            background: #1e3a8a;
-            color: #fff;
-            border: none;
-            padding: 12px 25px;
-            font-size: 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        .whatsapp-btn {
-            background: #25D366;
-        }
-        .whatsapp-btn:hover {
-            background: #1ebe5d;
-        }
-        .cta button:hover {
-            background: #0f256e;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #1e3a8a;
-            color: #fff;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBSE Maths Science Online</title>
+
+<style>
+
+/* RESET */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9fafc;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #f1f1f1;
+    font-size: 14px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* WAVE BACKGROUND */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* LEFT IMAGE */
+.hero-left img {
+    width: 200px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* RIGHT */
+.hero-right {
+    max-width: 500px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(20px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+.hero-right h1 {
+    font-size: 40px;
+}
+
+.hero-right span {
+    color: #ff6b6b;
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 70%;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #ccc;
+}
+
+.search-box button {
+    padding: 12px;
+    border: none;
+    background: #ff6b6b;
+    color: white;
+}
+
+/* FLOAT BUTTON */
+.hire-btn {
+    position: fixed;
+    left: 0;
+    top: 40%;
+    background: #ff6b6b;
+    color: white;
+    padding: 10px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+/* MOBILE */
+@media(max-width:768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left img {
+        width: 150px;
+    }
+}
+
+</style>
 </head>
+
 <body>
 
-<nav style="position:sticky;top:0;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1);padding:10px;text-align:center;z-index:1000;">
-  <a href="#home" style="margin:0 10px;color:#1e3a8a;font-weight:bold;text-decoration:none;">Home</a>
-  <a href="#about" style="margin:0 10px;color:#1e3a8a;font-weight:bold;text-decoration:none;">About</a>
-  <a href="#subjects" style="margin:0 10px;color:#1e3a8a;font-weight:bold;text-decoration:none;">Subjects</a>
-  <a href="#why" style="margin:0 10px;color:#1e3a8a;font-weight:bold;text-decoration:none;">Why Me</a>
-  <a href="#contact" style="margin:0 10px;color:#1e3a8a;font-weight:bold;text-decoration:none;">Contact</a>
-</nav>
+<!-- FLOAT BUTTON -->
+<div class="hire-btn">Hire a Tutor</div>
 
-<header id="home">
-    <h1>Maths Tutor in Noida | Science Tutor in Noida</h1>
-    <p><strong>Yash Learning Academy</strong><br>
-    Mathematics & Science Tutor (class 8-12) | Online & Home Tuition<br>
-    <strong>City:</strong> Noida, Uttar Pradesh</p>
-</header>
+<a href="https://wa.me/919639455571" class="whatsapp">💬</a>
 
-<section id="home">
-    <h2>Welcome – Maths & Science Tutor in Noida</h2>
-    <p>
-        I am <strong>Yash Chauhan</strong>, a dedicated <strong>Maths and Science tutor in Noida</strong> with over <strong>5 years of teaching experience</strong>.
-        I teach students from Class 8 to Class 12 (CBSE & State Board) through online classes and
-        home tuition.
-    </p>
-    <p>
-        My aim is to build strong concepts, improve confidence, and help students perform better
-        in exams.
-    </p>
-</section>
+<!-- TOPBAR -->
+<div class="topbar">
+    📞 +91-9639455571
+</div>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        Teaching is not just my profession, but my responsibility. I believe that every student
-        can understand Maths and Science when concepts are explained clearly and patiently.
-    </p>
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>CBSE Maths Science</h2>
     <ul>
-        <li>5+ years of teaching experience</li>
-        <li>CBSE & State Board syllabus</li>
-        <li>Hindi + English explanation</li>
-        <li>Special focus on weak students</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Subjects</li>
+        <li>Contact</li>
     </ul>
-</section>
+</div>
 
-<section id="subjects">
-    <h2>Subjects Offered</h2>
-<div class="subjects">
+<!-- HERO -->
+<div class="hero">
 
-    <div class="card">
-        <h3>📘 Mathematics (Class 8 to 12 – CBSE)</h3>
-        <p>
-            Complete CBSE syllabus coverage including Algebra, Geometry,
-            Trigonometry, Calculus, Statistics and Probability.
-        </p>
+    <div class="hero-left">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
     </div>
 
-    <div class="card">
-        <h3>🔬 Science (Class 8 to 12 – CBSE)</h3>
-        <p>
-            Complete CBSE syllabus coverage in Physics, Chemistry and Biology
-            with concept-based and exam-oriented teaching.
-        </p>
+    <div class="hero-right">
+        <h1>Find Experience<span>d Tutors</span></h1>
+        <p>ONLINE & HOME TUTORS WITHIN 30 MINUTES</p>
+
+        <div class="search-box">
+            <input type="text" id="location" placeholder="Enter your city">
+            <button onclick="searchTutor()">Search</button>
+        </div>
+
+        <p id="result"></p>
     </div>
+
+    <!-- WAVE SVG -->
+    <svg class="wave" viewBox="0 0 1440 320">
+        <path fill="#ff6b6b" fill-opacity="0.2"
+        d="M0,192L60,165.3C120,139,240,85,360,90.7C480,96,600,160,720,181.3C840,203,960,181,1080,165.3C1200,149,1320,139,1380,133.3L1440,128V320H0Z"></path>
+    </svg>
 
 </div>
 
-</section>
+<script>
 
-<section id="why">
-    <h2>Why Choose Me?</h2>
-    <ul>
-        <li>Experienced <strong>Maths tutor in Noida</strong> with 5+ years of teaching experience</li>
-        <li>Strong focus on concept clarity and basics</li>
-        <li>Personal attention to every student</li>
-        <li>Regular practice, tests, and revision</li>
-        <li>Proven improvement in students’ confidence and results</li>
-    </ul>
-</section>
+/* SIMPLE SEARCH LOGIC */
+function searchTutor() {
+    let location = document.getElementById("location").value;
+    let result = document.getElementById("result");
 
-<section>
-    <h2>Teaching Method</h2>
-    <ul>
-        <li>Concept-based teaching from basics</li>
-        <li>Step-by-step explanation</li>
-        <li>Regular tests and revision</li>
-        <li>Doubt-clearing sessions</li>
-        <li>Friendly learning environment</li>
-    </ul>
-</section>
+    if(location === "") {
+        result.innerHTML = "Please enter your location";
+    } else {
+        result.innerHTML = "Tutors available in " + location + " (Demo)";
+    }
+}
 
-<section>
-    <h2>Mode of Classes</h2>
-    <ul>
-        <li>Online Classes (All Over the India)</li>
-        <li>Home Tuition (Nearby areas)</li>
-        <li>One-to-One & Small Batches</li>
-    </ul>
-</section>
-
-<section class="cta" id="contact">
-    <p><strong>Location:</strong> Noida, Uttar Pradesh</p>
-    <h2>Fill the enquiry form and get a FREE demo class</h2>
-    <div style="text-align:center; margin-bottom:15px;">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLRjCc7_H5vHNFOvXPxSArJPnZy_fav55T1tOZmUO9Qrlh5A/viewform" target="_blank">
-        <button>Fill Enquiry Form</button>
-    </a>
-</div>
-    <p>OR</p>
-    <p>Contact me today for a free demo class.</p>
-    <p><strong>Phone:</strong> 9639455571</p>
-    <p><strong>Email:</strong> yashsinghh555@gmail.com</p>
-    <button>Contact Now</button>
-    <a href="https://wa.me/919639455571" target="_blank">
-        <button class="whatsapp-btn">WhatsApp Chat Now</button>
-    </a>
-</section>
-
-
-<footer>
-    <p>© 2026 Yash Learning Academy. All Rights Reserved.</p>
-</footer>
+</script>
 
 </body>
 </html>
-
-
-
-
