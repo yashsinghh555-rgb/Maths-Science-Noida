@@ -1,113 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Yash Learning Academy</title>
+<meta name="google-site-verification" content="x3DyQ7NIlFwYAkpHjS57d5cRMLrlfQ7Wq4Ff3CMM97c" />
+<title>Maths Tutor in Noida | Science Tutor in Noida – Yash Learning Academy</title>
 
 <style>
 
-/* GOOGLE FONT */
+/* PREMIUM FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
     background: linear-gradient(to right, #e0ecff, #f5f9ff);
-}
-
-/* TOP BAR */
-.topbar {
-    background: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
+    color: #333;
 }
 
 /* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
-    background: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+nav {
     position: sticky;
     top: 0;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 12px;
+    text-align: center;
+    z-index: 1000;
 }
 
-.navbar h2 {
+nav a {
+    margin: 0 12px;
     color: #1e3a8a;
-}
-
-.navbar ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-}
-
-.navbar a {
+    font-weight: 600;
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
 }
 
-/* HERO */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 40px;
+/* HEADER */
+header {
     background: linear-gradient(to right, #1e3a8a, #2563eb);
-    color: white;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.hero-left img {
-    width: 260px;
-    animation: float 4s ease-in-out infinite;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-@keyframes float {
-    0% {transform: translateY(0);}
-    50% {transform: translateY(-15px);}
-    100% {transform: translateY(0);}
-}
-
-.hero-right h1 {
-    font-size: 42px;
-}
-
-.hero-right span {
-    color: #ffd6a5;
-}
-
-/* BUTTON */
-.btn {
-    padding: 14px 30px;
-    background: #ff6b6b;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    margin-top: 20px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
 }
 
 /* SECTION */
 section {
-    padding: 60px 40px;
-    max-width: 1100px;
-    margin: auto;
+    padding: 40px 25px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* HEADINGS */
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+/* LIST */
+ul {
+    padding-left: 20px;
+}
+
+/* SUBJECTS GRID */
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 /* CARD */
 .card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: 0.3s;
 }
 
@@ -115,50 +94,48 @@ section {
     transform: translateY(-5px);
 }
 
-/* SUBJECTS */
-.subjects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
 /* CTA */
 .cta {
     text-align: center;
     background: linear-gradient(to right, #ff6b6b, #ff8e8e);
     color: white;
-    border-radius: 20px;
 }
 
-/* FLOAT BUTTON */
-.hire-btn {
-    position: fixed;
-    left: 0;
-    top: 40%;
-    background: #ff6b6b;
-    color: white;
-    padding: 12px;
-    writing-mode: vertical-rl;
-    border-radius: 0 8px 8px 0;
+/* BUTTON */
+.cta button {
+    background: white;
+    color: #1e3a8a;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.cta button:hover {
+    background: #f1f1f1;
 }
 
 /* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    background: #25D366;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 50px;
-    font-weight: bold;
+.whatsapp-btn {
+    background: #25D366 !important;
+    color: white !important;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e3a8a;
+    color: #fff;
 }
 
 /* MOBILE */
 @media(max-width:768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
+    header h1 {
+        font-size: 1.8rem;
     }
 }
 
@@ -167,100 +144,123 @@ section {
 
 <body>
 
-<!-- TOP -->
-<div class="topbar">
-📞 9639455571 | ✉️ yashsinghh555@gmail.com
-</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#subjects">Subjects</a>
+<a href="#why">Why Me</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<!-- FLOAT -->
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeLRjCc7_H5vHNFOvXPxSArJPnZy_fav55T1tOZmUO9Qrlh5A/viewform" target="_blank">
-<div class="hire-btn">Hire Tutor</div>
-</a>
+<header id="home">
+<h1>Maths Tutor in Noida | Science Tutor in Noida</h1>
+<p><strong>Yash Learning Academy</strong><br>
+Mathematics & Science Tutor (class 8-12) | Online & Home Tuition<br>
+<strong>City:</strong> Noida, Uttar Pradesh</p>
+</header>
 
-<a href="https://wa.me/919639455571" target="_blank" class="whatsapp">Chat</a>
-
-<!-- NAV -->
-<div class="navbar">
-<h2>Yash Learning Academy</h2>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#subjects">Subjects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</div>
-
-<!-- HERO -->
-<div class="hero" id="home">
-
-<div class="hero-left">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
-</div>
-
-<div class="hero-right">
-<h1>Find Experience<span>d Tutors</span></h1>
-<p>Mathematics & Science Tutor (Class 8–12)</p>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeLRjCc7_H5vHNFOvXPxSArJPnZy_fav55T1tOZmUO9Qrlh5A/viewform" target="_blank">
-<button class="btn">Book Free Demo</button>
-</a>
-
-</div>
-
-</div>
-
-<!-- ABOUT -->
-<section id="about">
-<h2>About Me</h2>
-
-<div class="card">
-<p><strong>Yash Chauhan</strong> – Maths & Science Tutor in Noida with 5+ years experience.</p>
-
-<ul>
-<li>Class 8–12 (CBSE & State Board)</li>
-<li>Hindi + English explanation</li>
-<li>Weak students special focus</li>
-<li>Concept clarity + tests</li>
-</ul>
-</div>
-
+<section id="home">
+<h2>Welcome – Maths & Science Tutor in Noida</h2>
+<p>
+I am <strong>Yash Chauhan</strong>, a dedicated <strong>Maths and Science tutor in Noida</strong> with over <strong>5 years of teaching experience</strong>.
+I teach students from Class 8 to Class 12 (CBSE & State Board) through online classes and
+home tuition.
+</p>
+<p>
+My aim is to build strong concepts, improve confidence, and help students perform better
+in exams.
+</p>
 </section>
 
-<!-- SUBJECTS -->
+<section id="about">
+<h2>About Me</h2>
+<p>
+Teaching is not just my profession, but my responsibility. I believe that every student
+can understand Maths and Science when concepts are explained clearly and patiently.
+</p>
+<ul>
+<li>5+ years of teaching experience</li>
+<li>CBSE & State Board syllabus</li>
+<li>Hindi + English explanation</li>
+<li>Special focus on weak students</li>
+</ul>
+</section>
+
 <section id="subjects">
 <h2>Subjects Offered</h2>
-
 <div class="subjects">
 
 <div class="card">
-<h3>📘 Mathematics</h3>
-<p>Algebra, Trigonometry, Calculus</p>
+<h3>📘 Mathematics (Class 8 to 12 – CBSE)</h3>
+<p>
+Complete CBSE syllabus coverage including Algebra, Geometry,
+Trigonometry, Calculus, Statistics and Probability.
+</p>
 </div>
 
 <div class="card">
-<h3>🔬 Science</h3>
-<p>Physics, Chemistry, Biology</p>
+<h3>🔬 Science (Class 8 to 12 – CBSE)</h3>
+<p>
+Complete CBSE syllabus coverage in Physics, Chemistry and Biology
+with concept-based and exam-oriented teaching.
+</p>
 </div>
 
 </div>
-
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="cta">
-<h2>Get Free Demo Class</h2>
+<section id="why">
+<h2>Why Choose Me?</h2>
+<ul>
+<li>Experienced <strong>Maths tutor in Noida</strong> with 5+ years of teaching experience</li>
+<li>Strong focus on concept clarity and basics</li>
+<li>Personal attention to every student</li>
+<li>Regular practice, tests, and revision</li>
+<li>Proven improvement in students’ confidence and results</li>
+</ul>
+</section>
+
+<section>
+<h2>Teaching Method</h2>
+<ul>
+<li>Concept-based teaching from basics</li>
+<li>Step-by-step explanation</li>
+<li>Regular tests and revision</li>
+<li>Doubt-clearing sessions</li>
+<li>Friendly learning environment</li>
+</ul>
+</section>
+
+<section>
+<h2>Mode of Classes</h2>
+<ul>
+<li>Online Classes (All Over the India)</li>
+<li>Home Tuition (Nearby areas)</li>
+<li>One-to-One & Small Batches</li>
+</ul>
+</section>
+
+<section class="cta" id="contact">
+<p><strong>Location:</strong> Noida, Uttar Pradesh</p>
+<h2>Fill the enquiry form and get a FREE demo class</h2>
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLRjCc7_H5vHNFOvXPxSArJPnZy_fav55T1tOZmUO9Qrlh5A/viewform" target="_blank">
-<button class="btn">Fill Enquiry Form</button>
+<button>Fill Enquiry Form</button>
 </a>
 
-<p>📞 9639455571</p>
-<p>✉️ yashsinghh555@gmail.com</p>
+<p>OR</p>
+<p>Contact me today for a free demo class.</p>
+<p><strong>Phone:</strong> 9639455571</p>
+<p><strong>Email:</strong> yashsinghh555@gmail.com</p>
+
+<a href="https://wa.me/919639455571" target="_blank">
+<button class="whatsapp-btn">WhatsApp Chat Now</button>
+</a>
 
 </section>
 
-<footer style="text-align:center;padding:20px;background:#1e3a8a;color:white;">
-© 2026 Yash Learning Academy
+<footer>
+<p>© 2026 Yash Learning Academy. All Rights Reserved.</p>
 </footer>
 
 </body>
