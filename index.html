@@ -8,19 +8,10 @@
 
 <style>
 
-/* RESET */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background: #f9fafc;
-}
-
-/* TOPBAR */
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background: #f1f1f1;
 }
 
 /* NAVBAR */
@@ -32,7 +23,6 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
-    z-index: 1000;
 }
 
 .navbar ul {
@@ -53,64 +43,34 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 60px 20px;
-    position: relative;
-    overflow: hidden;
 }
 
 .hero-left img {
     width: 200px;
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% {transform: translateY(0);}
-    50% {transform: translateY(-10px);}
-    100% {transform: translateY(0);}
 }
 
 .hero-right {
     max-width: 500px;
-    animation: fadeIn 1s ease-in;
 }
 
-@keyframes fadeIn {
-    from {opacity:0; transform: translateY(20px);}
-    to {opacity:1; transform: translateY(0);}
-}
-
-.hero-right h1 {
-    font-size: 40px;
-}
-
-.hero-right span {
+.hero-right h1 span {
     color: #ff6b6b;
 }
 
-/* SEARCH */
-.search-box {
-    display: flex;
-    margin-top: 20px;
-}
-
-.search-box input {
-    padding: 12px;
-    width: 70%;
-    border-radius: 6px 0 0 6px;
-    border: 1px solid #ccc;
-}
-
-.search-box button {
-    padding: 12px;
-    border: none;
+/* BUTTON */
+.btn {
+    padding: 12px 25px;
     background: #ff6b6b;
     color: white;
+    border: none;
+    border-radius: 6px;
 }
 
-/* WAVE */
-.wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+/* SECTION */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 /* SUBJECTS */
@@ -124,31 +84,6 @@ body {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-/* SECTION */
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* CTA */
-.cta {
-    text-align: center;
-    background: #ffe5e5;
-    border-radius: 10px;
-}
-
-/* BUTTON */
-.btn {
-    padding: 12px 25px;
-    background: #ff6b6b;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
 }
 
 /* FLOAT BUTTON */
@@ -160,7 +95,6 @@ section {
     color: white;
     padding: 10px;
     writing-mode: vertical-rl;
-    border-radius: 0 5px 5px 0;
 }
 
 /* WHATSAPP */
@@ -172,7 +106,6 @@ section {
     color: white;
     padding: 12px 18px;
     border-radius: 50px;
-    font-weight: bold;
 }
 
 /* MOBILE */
@@ -189,15 +122,10 @@ section {
 <body>
 
 <div class="hire-btn">Hire Tutor</div>
-
 <a href="https://wa.me/919639455571" target="_blank" class="whatsapp">Chat</a>
 
-<div class="topbar">
-📞 +91-9639455571
-</div>
-
 <div class="navbar">
-<h2>Yash Academy</h2>
+<h2>Yash Learning Academy</h2>
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
@@ -214,46 +142,72 @@ section {
 
 <div class="hero-right">
 <h1>Find Experience<span>d Tutors</span></h1>
-<p>ONLINE & HOME TUTORS WITHIN 30 MINUTES</p>
+<p>Mathematics & Science Tutor (Class 8–12)</p>
 
-<div class="search-box">
-<input type="text" id="location" placeholder="Enter your city">
-<button onclick="searchTutor()">Search</button>
+<a href="#contact">
+<button class="btn">Book Free Demo</button>
+</a>
 </div>
-
-<p id="result"></p>
-</div>
-
-<svg class="wave" viewBox="0 0 1440 320">
-<path fill="#ff6b6b" fill-opacity="0.2"
-d="M0,192L60,165C120,139,240,85,360,90C480,96,600,160,720,181C840,203,960,181,1080,165C1200,149,1320,139,1380,133L1440,128V320H0Z">
-</path>
-</svg>
 
 </div>
 
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+
+<p>
+I am <strong>Yash Chauhan</strong>, a dedicated <strong>Maths and Science tutor in Noida</strong> with over <strong>5 years of teaching experience</strong>.
+</p>
+
+<p>
+I teach students from <strong>Class 8 to Class 12 (CBSE & State Board)</strong> through online classes and home tuition.
+</p>
+
+<ul>
+<li>5+ years of teaching experience</li>
+<li>CBSE & State Board syllabus</li>
+<li>Hindi + English explanation</li>
+<li>Special focus on weak students</li>
+<li>Concept clarity from basics</li>
+<li>Regular tests & revision</li>
+</ul>
+
+</section>
+
+<!-- SUBJECTS -->
 <section id="subjects">
 <h2>Subjects Offered</h2>
 
 <div class="subjects">
-<div class="card">
-<h3>Mathematics</h3>
-<p>Algebra, Trigonometry, Calculus, Statistics</p>
-</div>
 
 <div class="card">
-<h3>Science</h3>
-<p>Physics, Chemistry, Biology</p>
+<h3>📘 Mathematics (Class 8–12)</h3>
+
+
+<div class="card">
+<h3>🔬 Science (Class 8–12)</h3>
+
+
 </div>
-</div>
+
 </section>
 
-<section id="about">
-<h2>About Me</h2>
-<p>I am Yash Chauhan, Maths & Science tutor with 5+ years experience helping students succeed.</p>
+<!-- WHY -->
+<section>
+<h2>Why Choose Me?</h2>
+
+<ul>
+<li>Experienced Maths tutor in Noida</li>
+<li>Strong focus on concept clarity</li>
+<li>Personal attention to each student</li>
+<li>Friendly teaching style</li>
+<li>Proven improvement in results</li>
+</ul>
+
 </section>
 
-<section class="cta" id="contact">
+<!-- CONTACT -->
+<section id="contact" style="text-align:center;background:#ffe5e5;border-radius:10px;">
 <h2>Get Free Demo Class</h2>
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLRjCc7_H5vHNFOvXPxSArJPnZy_fav55T1tOZmUO9Qrlh5A/viewform" target="_blank">
@@ -261,24 +215,12 @@ d="M0,192L60,165C120,139,240,85,360,90C480,96,600,160,720,181C840,203,960,181,10
 </a>
 
 <p>OR WhatsApp for instant reply</p>
+
 </section>
 
 <footer style="text-align:center;padding:15px;background:#1e3a8a;color:white;">
 © 2026 Yash Learning Academy
 </footer>
-
-<script>
-function searchTutor() {
-let location = document.getElementById("location").value;
-let result = document.getElementById("result");
-
-if(location === "") {
-result.innerHTML = "Please enter your location";
-} else {
-result.innerHTML = "Tutors available in " + location;
-}
-}
-</script>
 
 </body>
 </html>
