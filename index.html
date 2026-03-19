@@ -4,22 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Maths Tutor in Noida | Science Tutor in Noida</title>
+<title>Yash Learning Academy</title>
 
 <style>
 
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f9fafc;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e0ecff, #f5f9ff);
 }
 
 /* TOP BAR */
 .topbar {
     background: #1e3a8a;
     color: white;
-    padding: 10px 20px;
     text-align: center;
+    padding: 10px;
     font-size: 14px;
 }
 
@@ -27,22 +30,26 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px;
+    padding: 15px 40px;
     background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
 }
 
+.navbar h2 {
+    color: #1e3a8a;
+}
+
 .navbar ul {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     list-style: none;
 }
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: #333;
     font-weight: 500;
 }
 
@@ -51,49 +58,76 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 20px;
+    padding: 80px 40px;
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    color: white;
 }
 
 .hero-left img {
-    width: 200px;
+    width: 260px;
+    animation: float 4s ease-in-out infinite;
 }
 
-.hero-right {
-    max-width: 500px;
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
 }
 
-.hero-right h1 span {
-    color: #ff6b6b;
+.hero-right h1 {
+    font-size: 42px;
+}
+
+.hero-right span {
+    color: #ffd6a5;
 }
 
 /* BUTTON */
 .btn {
-    padding: 12px 25px;
+    padding: 14px 30px;
     background: #ff6b6b;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 20px;
     cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* SECTION */
 section {
-    padding: 40px 20px;
-    max-width: 1000px;
+    padding: 60px 40px;
+    max-width: 1100px;
     margin: auto;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* SUBJECTS */
 .subjects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 25px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+/* CTA */
+.cta {
+    text-align: center;
+    background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+    color: white;
+    border-radius: 20px;
 }
 
 /* FLOAT BUTTON */
@@ -105,7 +139,7 @@ section {
     color: white;
     padding: 12px;
     writing-mode: vertical-rl;
-    cursor: pointer;
+    border-radius: 0 8px 8px 0;
 }
 
 /* WHATSAPP */
@@ -115,8 +149,9 @@ section {
     bottom: 20px;
     background: #25D366;
     color: white;
-    padding: 12px 18px;
+    padding: 14px 20px;
     border-radius: 50px;
+    font-weight: bold;
 }
 
 /* MOBILE */
@@ -132,22 +167,21 @@ section {
 
 <body>
 
-<!-- TOP CONTACT -->
+<!-- TOP -->
 <div class="topbar">
 📞 9639455571 | ✉️ yashsinghh555@gmail.com
 </div>
 
-<!-- FLOAT BUTTON -->
+<!-- FLOAT -->
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLRjCc7_H5vHNFOvXPxSArJPnZy_fav55T1tOZmUO9Qrlh5A/viewform" target="_blank">
 <div class="hire-btn">Hire Tutor</div>
 </a>
 
-<!-- WHATSAPP -->
 <a href="https://wa.me/919639455571" target="_blank" class="whatsapp">Chat</a>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <div class="navbar">
-<h2>Yash Learning Academy</h2>
+<h2>Yash Academy</h2>
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
@@ -179,22 +213,16 @@ section {
 <section id="about">
 <h2>About Me</h2>
 
-<p>
-I am <strong>Yash Chauhan</strong>, a dedicated <strong>Maths and Science tutor in Noida</strong> with over <strong>5 years of teaching experience</strong>.
-</p>
-
-<p>
-I teach students from <strong>Class 8 to Class 12 (CBSE & State Board)</strong> through online classes and home tuition.
-</p>
+<div class="card">
+<p><strong>Yash Chauhan</strong> – Maths & Science Tutor in Noida with 5+ years experience.</p>
 
 <ul>
-<li>5+ years of teaching experience</li>
-<li>CBSE & State Board syllabus</li>
+<li>Class 8–12 (CBSE & State Board)</li>
 <li>Hindi + English explanation</li>
-<li>Special focus on weak students</li>
-<li>Concept clarity from basics</li>
-<li>Regular tests & revision</li>
+<li>Weak students special focus</li>
+<li>Concept clarity + tests</li>
 </ul>
+</div>
 
 </section>
 
@@ -205,13 +233,13 @@ I teach students from <strong>Class 8 to Class 12 (CBSE & State Board)</strong> 
 <div class="subjects">
 
 <div class="card">
-<h3>📘 Mathematics (Class 8–12)</h3>
-<p>Algebra, Geometry, Trigonometry, Calculus, Statistics</p>
+<h3>📘 Mathematics</h3>
+<p>Algebra, Trigonometry, Calculus</p>
 </div>
 
 <div class="card">
-<h3>🔬 Science (Class 8–12)</h3>
-<p>Physics, Chemistry, Biology with concept-based teaching</p>
+<h3>🔬 Science</h3>
+<p>Physics, Chemistry, Biology</p>
 </div>
 
 </div>
@@ -219,7 +247,7 @@ I teach students from <strong>Class 8 to Class 12 (CBSE & State Board)</strong> 
 </section>
 
 <!-- CONTACT -->
-<section id="contact" style="text-align:center;background:#ffe5e5;border-radius:10px;">
+<section id="contact" class="cta">
 <h2>Get Free Demo Class</h2>
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLRjCc7_H5vHNFOvXPxSArJPnZy_fav55T1tOZmUO9Qrlh5A/viewform" target="_blank">
@@ -231,7 +259,7 @@ I teach students from <strong>Class 8 to Class 12 (CBSE & State Board)</strong> 
 
 </section>
 
-<footer style="text-align:center;padding:15px;background:#1e3a8a;color:white;">
+<footer style="text-align:center;padding:20px;background:#1e3a8a;color:white;">
 © 2026 Yash Learning Academy
 </footer>
 
